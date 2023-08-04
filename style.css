@@ -135,6 +135,9 @@ padding: 1.2rem;
 
   justify-content: center;
   align-items: center;
+
+    transition: all 200ms ease-out;
+
 }
 
 button:hover {
