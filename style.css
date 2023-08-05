@@ -42,18 +42,22 @@ header {
 }
 
 header .logo {
+
+display: inline-block;
+
   width: 4.2rem;
   height: 4.2rem;
 
-  object-fit: cover;
 
   border-radius: 50%;
 
   background-color: var(--color-header-paw);
-  margin-left: 2.8rem;
 
-  justify-content: center;
-  align-items: center;
+
+}
+
+header .logo img {
+padding: 0.8rem;
 }
 
 .input-wrapper label {
@@ -89,7 +93,6 @@ header .logo {
 
   border-radius: 50%;
 
-  margin-right: 2.8rem;
 }
 
 /*main*/
@@ -217,4 +220,17 @@ main p {
   text-align: center;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+@media (min-width: 1180px) {
+  header {
+    justify-content: center;
+  }
+
+  /* clamp(min, ideal, alto) */
+
+  .input-wrapper input {
+    display: block;
+    width: clamp(80rem, 100rem + 1vw, 120rem);
+  }
 }
